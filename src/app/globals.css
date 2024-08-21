@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -15,15 +14,22 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
+@font-face {
+  font-family: "Philosopher";
+  src: url("../app/fonts/Philosopher/Philosopher-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "overused_grotesk";
+  src: url("../app/fonts/overused_grotesk/fonts/ttf/OverusedGrotesk-Medium.ttf") format("truetype");
+}
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  font-family: "overused_grotesk";
+  width: 1440px;
 }
 
 @layer utilities {
@@ -31,3 +37,4 @@ body {
     text-wrap: balance;
   }
 }
+/*# sourceMappingURL=globals.css.map */

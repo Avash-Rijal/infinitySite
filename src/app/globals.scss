@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@font-face {
+  font-family: 'Philosopher';
+  src: url('../app/fonts/Philosopher/Philosopher-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'overused_grotesk';
+  src: url('../app/fonts/overused_grotesk/fonts/ttf/OverusedGrotesk-Medium.ttf') format('truetype');
+}
+
+$primary-red: #910606;
+$primary-blue: #203277;
+$primary-black: #040505;
+$dark-grey: #333;
+$light-grey: #ccc;
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  font-family: 'overused_grotesk';
+  width: 1440px;  
+
+  // .navBar {
+  //   display: flex;
+  //   align-items: center;
+  //   padding-top: 20px;
+  //   padding-bottom: 20px;
+
+  //   .logo{
+  //     display: flex;
+  //     justify-content: start;
+  //   }
+
+  //   .navOptions {
+  //     display: flex;
+  //     justify-content: end;
+  //     align-items: center;
+
+  //     .navLinksContainer{
+  //       gap: 2rem;
+
+  //       .navLink {
+  //         font-size: 18px;
+  //       }
+  
+  //       .navLink:hover {
+  //         color: $primary-red;
+  //       }
+  //     }
+  //   }
+
+  //   .searchIcon {
+  //     width: 24px;
+  //     height: 24px;
+  //     padding: 2px;
+  //   }
+
+  //   .searchIcon:hover {
+  //     cursor: pointer;
+  //   }
+  // }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+

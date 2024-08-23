@@ -28,8 +28,190 @@ body {
 }
 
 .container {
+  width: 1120px;
+}
+
+.header {
   font-family: "overused_grotesk";
-  width: 1440px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo {
+  display: flex;
+  justify-content: flex-start;
+}
+.header .navOptions {
+  display: flex;
+  gap: 2rem;
+}
+.header .navOptions .navLinksContainer {
+  display: flex;
+  gap: 2rem;
+}
+.header .navOptions .navLinksContainer div {
+  font-size: 18px;
+}
+.header .navOptions .navLinksContainer div:hover {
+  color: #910606;
+  cursor: pointer;
+}
+.header .navOptions .navLinksContainer .sub-links-container {
+  color: #040505;
+  display: none;
+  position: absolute;
+  padding-top: 0.2rem;
+  font-size: 14px;
+  align-items: start;
+  gap: 0.2rem;
+  width: 12rem;
+}
+.header .navOptions .navLinksContainer .sub-links-container .sub-links {
+  color: #040505;
+}
+.header .navOptions .navLinksContainer .sub-links-container .sub-links:hover {
+  color: #910606;
+}
+.header .navOptions .navLinksContainer .area-of-practice {
+  position: relative;
+}
+.header .navOptions .navLinksContainer .area-of-practice:hover .sub-links-container {
+  display: block;
+  display: flex;
+  flex-direction: column;
+}
+.header .navOptions .navLinksContainer .insights {
+  position: relative;
+}
+.header .navOptions .navLinksContainer .insights:hover .sub-links-container {
+  display: block;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  height: 36.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/infinitypartners/public/heroImage.png");
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1490196078);
+}
+.hero .hero-content {
+  display: flex;
+  justify-content: space-between;
+}
+.hero .hero-content .hero-text {
+  width: 50%;
+}
+.hero .hero-content .hero-text .hero-text-title {
+  margin-bottom: 0.75rem;
+}
+.hero .hero-content .hero-text .hero-text-title h2 {
+  font-family: Philosopher;
+  font-weight: 700;
+  font-size: 3rem;
+}
+.hero .hero-content .hero-text p {
+  color: #333;
+  font-weight: 400;
+  font-size: 18px;
+}
+.hero .hero-content .hero-text button {
+  margin-top: 2rem;
+  padding-top: 12px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  background-color: #910606;
+  color: white;
+  border-radius: 4px;
+}
+.hero .hero-content .hero-image {
+  width: 50%;
+  display: flex;
+}
+.hero .hero-content .hero-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.area-of-practice-section {
+  margin-top: 4rem;
+}
+.area-of-practice-section .area-of-practice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.area-of-practice-section .area-of-practice-header .area-of-practice-heading {
+  font-family: "Philosopher";
+  width: 40%;
+}
+.area-of-practice-section .area-of-practice-header .area-of-practice-heading > :first-child {
+  font-size: 3rem;
+  color: #910606;
+}
+.area-of-practice-section .area-of-practice-header .area-of-practice-heading > :nth-child(2) {
+  font-size: 3rem;
+  color: #040505;
+}
+.area-of-practice-section .area-of-practice-header .divider {
+  border: 1px solid #A5ACCB;
+  height: 5rem;
+}
+.area-of-practice-section .area-of-practice-header .area-of-practice-description {
+  width: 40%;
+  font-size: 18px;
+  color: #333;
+}
+.area-of-practice-section .area-of-practice-content {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  row-gap: 16px;
+}
+.area-of-practice-section .area-of-practice-content .area-of-practice-card {
+  padding-top: 30px;
+  padding-right: 40px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  background-color: #DEE1F0;
+  width: 34.5rem;
+}
+.area-of-practice-section .area-of-practice-content .area-of-practice-card h4 {
+  font-family: "Philosopher";
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.area-of-practice-section .area-of-practice-content .area-of-practice-card p {
+  font-weight: 400;
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.area-of-practice-section .area-of-practice-content .area-of-practice-card .area-of-practice-card-bottom {
+  border-top: 2px solid rgba(32, 50, 157, 0.5);
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 34px;
+}
+.area-of-practice-section .area-of-practice-content .area-of-practice-card .area-of-practice-card-bottom button {
+  border: 3px solid #20327F;
+  padding-top: 15px;
+  padding-right: 38px;
+  padding-bottom: 15px;
+  padding-left: 38px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #20327F;
 }
 
 @layer utilities {

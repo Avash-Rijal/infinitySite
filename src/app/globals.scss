@@ -37,50 +37,206 @@ body {
   justify-content: center;
 }
 
-.container {
-  font-family: 'overused_grotesk';
-  width: 1440px;  
-
-  // .navBar {
-  //   display: flex;
-  //   align-items: center;
-  //   padding-top: 20px;
-  //   padding-bottom: 20px;
-
-  //   .logo{
-  //     display: flex;
-  //     justify-content: start;
-  //   }
-
-  //   .navOptions {
-  //     display: flex;
-  //     justify-content: end;
-  //     align-items: center;
-
-  //     .navLinksContainer{
-  //       gap: 2rem;
-
-  //       .navLink {
-  //         font-size: 18px;
-  //       }
-  
-  //       .navLink:hover {
-  //         color: $primary-red;
-  //       }
-  //     }
-  //   }
-
-  //   .searchIcon {
-  //     width: 24px;
-  //     height: 24px;
-  //     padding: 2px;
-  //   }
-
-  //   .searchIcon:hover {
-  //     cursor: pointer;
-  //   }
-  // }
+.container{
+  width: 1120px; 
 }
+
+  .header {
+    font-family: 'overused_grotesk';
+    padding: {
+      top: 25px;
+      bottom: 25px;
+    };
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+      display: flex;
+      justify-content: flex-start;
+    }
+    .navOptions {
+      display: flex;
+      gap: 2rem;
+      
+      .navLinksContainer{
+        display: flex;
+        gap: 2rem;
+        div{
+          font-size: 18px;
+        }
+        div:hover{
+          color: $primary-red;
+          cursor: pointer;
+        }
+        .sub-links-container {
+          color: $primary-black;
+          display: none;
+          position: absolute;
+          padding-top: 0.2rem;
+          font-size: 14px;
+          // font-weight: ;
+          align-items: start;
+          gap: 0.2rem;
+          width: 12rem;
+          .sub-links{
+            color: $primary-black;
+          }
+          .sub-links:hover{
+            color: $primary-red;
+          }
+        }
+        .area-of-practice {
+          position: relative;    
+          &:hover .sub-links-container {
+            display: block;
+            display: flex;
+            flex-direction: column;
+          }
+        }
+        .insights{
+          position: relative;
+          &:hover .sub-links-container {
+            display: block;
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+
+  }
+
+  .hero{
+    height: 36.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/infinitypartners/public/heroImage.png");
+    box-shadow: 0px 0px 10px 3px #00000026;
+    .hero-content{
+      display: flex;
+      justify-content: space-between;
+      .hero-text{
+        width: 50%;
+        .hero-text-title{
+          margin-bottom: 0.75rem;
+          h2{
+            font-family: Philosopher;
+            font-weight: 700;
+            font-size: 3rem;
+          }
+        }
+        p{
+          color: $dark-grey;
+          font-weight: 400;
+          font-size: 18px;
+        }
+        button{
+          margin-top: 2rem;
+          padding : {
+            top:12px;
+            right: 24px;
+            bottom: 12px;
+            left: 24px;
+          }
+          background-color: $primary-red;
+          color: white;
+          border-radius: 4px;
+        }
+      }
+      .hero-image{
+        width: 50%;
+        display: flex;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .area-of-practice-section{
+    margin-top: 4rem;
+
+    .area-of-practice-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4rem;
+    .area-of-practice-heading{
+        font-family: 'Philosopher';
+        width: 40%;
+      }
+    .area-of-practice-heading > :first-child{
+        font-size: 3rem;
+        color: $primary-red;
+      }
+    .area-of-practice-heading > :nth-child(2){
+        font-size: 3rem;
+        color: $primary-black;
+      }
+
+      .divider{
+        border: 1px solid #A5ACCB;
+        height: 5rem;
+      }
+
+      .area-of-practice-description{
+        width: 40%;
+        font-size: 18px;
+        color: $dark-grey;
+      }
+    }
+
+    .area-of-practice-content{
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 16px;
+      row-gap: 16px;
+      .area-of-practice-card{
+        padding: {
+          top: 30px;
+          right: 40px;
+          bottom: 30px;
+          left: 40px;
+        };
+        background-color: #DEE1F0;
+        width: 34.5rem;
+        h4{
+          font-family: 'Philosopher';
+          font-size: 36px;
+          font-weight: 700;
+          margin-bottom: 8px;
+        }
+        p{
+          font-weight: 400;
+          font-size: 20px;
+          color: $dark-grey;
+          margin-bottom: 20px;
+        }
+        .area-of-practice-card-bottom{
+          border-top: 2px solid rgba(32, 50, 157, 0.5);
+          margin-top: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-top: 34px;
+          button{
+            border: 3px solid #20327F;
+            padding: {
+              top: 15px;
+              right: 38px;
+              bottom: 15px;
+              left: 38px;
+            };
+            font-size: 20px;
+            font-weight: 600;
+            color: #20327F;
+          }
+        }
+      }
+    }
+  }
 
 @layer utilities {
   .text-balance {

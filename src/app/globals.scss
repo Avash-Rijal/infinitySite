@@ -170,15 +170,17 @@ body {
     .area-of-practice-heading > :first-child{
         font-size: 3rem;
         color: $primary-red;
+        font-weight: 700;
       }
     .area-of-practice-heading > :nth-child(2){
         font-size: 3rem;
         color: $primary-black;
+        font-weight: 700;
       }
 
       .divider{
         border: 1px solid #A5ACCB;
-        height: 5rem;
+        height: 7rem; 
       }
 
       .area-of-practice-description{
@@ -237,6 +239,32 @@ body {
       }
     }
   }
+
+  .insights-section{
+      margin-top: 4rem;
+      display: flex;
+
+    .insights-section-header {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 4rem;
+      font-family: 'Philosopher';
+      width: 40%;
+    }
+    .insights-section-header > :nth-child(1){
+      color: $primary-red;
+      font-size: 3rem;
+      font-weight: 700;
+
+    }
+    .insights-section-header > :nth-child(2){
+      color: $primary-black;
+      font-size: 3rem;
+      font-weight: 700;
+    }
+  }
+
+
 
 @layer utilities {
   .text-balance {

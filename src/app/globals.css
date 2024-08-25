@@ -219,11 +219,13 @@ body {
 .insights-section {
   margin-top: 4rem;
   display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 .insights-section .insights-section-header {
   display: flex;
   flex-direction: column;
-  margin-bottom: 4rem;
+  margin-bottom: 1.5rem;
   font-family: "Philosopher";
   width: 40%;
 }
@@ -236,6 +238,129 @@ body {
   color: #040505;
   font-size: 3rem;
   font-weight: 700;
+}
+.insights-section .insights-section-main {
+  display: flex;
+  justify-content: space-between;
+}
+.insights-section .insights-section-main .insights-section-main-image {
+  width: 33rem;
+  cursor: pointer;
+}
+.insights-section .insights-section-main .insights-section-main-content {
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.insights-section .insights-section-main .insights-section-main-content .insights-section-main-date {
+  font-size: 20px;
+  color: #203277;
+  font-weight: 400;
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #3A4553;
+}
+.insights-section .insights-section-main .insights-section-main-content .insights-section-main-title {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 40px;
+  font-family: "Philosopher";
+  color: #040505;
+  cursor: pointer;
+}
+.insights-section .insights-section-main .insights-section-main-content .insights-section-main-description {
+  font-weight: 400;
+  font-size: 20px;
+}
+.insights-section .insights-section-main .insights-section-main-content .insights-section-main-link {
+  font-size: 22px;
+  font-weight: 500;
+  color: #203277;
+  line-height: 28px;
+  text-decoration: underline;
+}
+.insights-section .insights-section-other-content {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.insights-section .insights-section-other-content .insights-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.insights-section .insights-section-other-content .insights-contents .insights-contents-date {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  border-bottom: 1px solid #040505;
+  color: #203277;
+  padding-bottom: 2px;
+}
+.insights-section .insights-section-other-content .insights-contents .insights-contents-title {
+  font-family: "Philosopher";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.insights-section .insights-section-other-content .insights-contents .insights-contents-description {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.insights-section .insights-section-other-content .insights-contents .insights-contents-link {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #203277;
+  text-decoration: underline;
+}
+
+.advocates-section {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.advocates-section .advocates-section-heading > :nth-child(1) {
+  color: #910606;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 65px;
+  font-family: "Philosopher";
+}
+.advocates-section .advocates-section-heading > :nth-child(2) {
+  color: #040505;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 65px;
+  font-family: "Philosopher";
+}
+.advocates-section .advocates-section-list {
+  display: flex;
+  gap: 68px;
+}
+.advocates-section .advocates-section-list .advocates-individual-box {
+  background-color: #F3F3F3;
+  box-shadow: 4px 4px 5.8px 0px #CFCFCF;
+  border: 1px solid rgba(32, 50, 127, 0.5);
+  padding: 24px;
+  width: 16rem;
+}
+.advocates-section .advocates-section-list .advocates-individual-box .advocates-individual-box-name {
+  width: 11.5rem;
+  font-family: "Philosopher";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  padding-top: 5px;
+}
+.advocates-section .advocates-section-list .advocates-individual-box .advocates-individual-box-designation {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #333;
 }
 
 @layer utilities {

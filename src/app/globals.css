@@ -29,6 +29,8 @@ body {
 
 .container {
   width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header {
@@ -361,6 +363,250 @@ body {
   font-weight: 500;
   line-height: 22px;
   color: #333;
+}
+
+.appointment-section {
+  background-color: #F7F7F7;
+  margin-top: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.appointment-section .appointment-section-content {
+  display: flex;
+  justify-content: space-between;
+}
+.appointment-section .appointment-section-content .appointment-section-text-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.appointment-section .appointment-section-content .appointment-section-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 3.25rem;
+}
+.appointment-section .appointment-section-content .appointment-section-form .form-details {
+  display: flex;
+  gap: 2rem;
+}
+.appointment-section .appointment-section-content .appointment-section-form .form-details input {
+  background: transparent;
+  outline: none;
+  border-bottom: 3px solid #ccc;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 65px;
+  color: rgba(64, 64, 64, 0.8);
+}
+.appointment-section .appointment-section-content .appointment-section-form .form-details input[type=number]::-webkit-outer-spin-button,
+.appointment-section .appointment-section-content .appointment-section-form .form-details input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.appointment-section .appointment-section-content .appointment-section-form .form-message textarea {
+  background: transparent;
+  outline: none;
+  border-bottom: 3px solid #ccc;
+  font-weight: 500;
+  font-size: 18px;
+  color: rgba(64, 64, 64, 0.8);
+  resize: none;
+  width: 100%;
+}
+.appointment-section .appointment-section-content .appointment-section-form .appointment-form-submit-button {
+  width: 21rem;
+  padding: 28px 32px 28px 32px;
+  gap: 11px;
+  font-size: 18px;
+  border-radius: 4px;
+  color: #F7F7F7;
+  opacity: 0px;
+  background: #20327F;
+}
+.appointment-section .appointment-section-header > :nth-child(1) {
+  font-size: 60px;
+  line-height: 65px;
+  font-family: "Philosopher";
+  font-weight: 700;
+  color: #910606;
+}
+.appointment-section .appointment-section-header > :nth-child(2) {
+  font-size: 60px;
+  line-height: 65px;
+  font-family: "Philosopher";
+  font-weight: 700;
+  color: #040505;
+}
+.appointment-section .appointment-section-image {
+  width: 26rem;
+  height: 40rem;
+}
+
+.office-location-container {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.office-location-container .office-location-header > :nth-child(1) {
+  font-family: "Philosopher";
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 65px;
+  color: #910606;
+}
+.office-location-container .office-location-header > :nth-child(2) {
+  font-family: "Philosopher";
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 65px;
+  color: #040505;
+}
+.office-location-container .office-location-contents {
+  display: flex;
+  gap: 4rem;
+}
+.office-location-container .office-location-contents .office-location-map {
+  width: 32rem;
+  height: 19rem;
+  border: 3px solid #ccc;
+  border-radius: 4px;
+}
+.office-location-container .office-location-contents .office-location-map img {
+  width: 100%;
+  height: 100%;
+}
+.office-location-container .office-location-contents .office-contact-details {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.office-location-container .office-location-contents .office-contact-details .divider {
+  border: 1px solid #C8C4C4;
+  width: 105px;
+}
+.office-location-container .office-location-contents .office-contact-details div {
+  font-size: 20px;
+  font-weight: 300;
+}
+.office-location-container .office-location-contents .office-contact-details div span {
+  font-size: 20px;
+  font-weight: 600;
+  color: #910606;
+}
+
+.footer-section {
+  background-color: #EFEFEF;
+  margin-top: 4rem;
+}
+.footer-section .newsletter-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.footer-section .newsletter-section .newsletter-section-text {
+  font-family: "Philosopher";
+  font-size: 1.5rem;
+  line-height: 26px;
+  font-weight: 700;
+  color: #040505;
+  width: 320px;
+}
+.footer-section .newsletter-section .newsletter-section-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #203277;
+  border-radius: 5px;
+  width: 540px;
+  gap: 10px;
+}
+.footer-section .newsletter-section .newsletter-section-input img {
+  padding-left: 24px;
+}
+.footer-section .newsletter-section .newsletter-section-input input {
+  padding-top: 14px;
+  padding-right: 24px;
+  padding-bottom: 14px;
+  gap: 10px;
+  opacity: 0px;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(4, 5, 5, 0.7215686275);
+  font-weight: 400;
+  width: 404px;
+}
+.footer-section .newsletter-section .newsletter-section-input button {
+  width: 134px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  border-left: 1px solid #203277;
+  padding: 14px 28px 14px 28px;
+}
+.footer-section .footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 300px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.footer-section .footer-content .logo-tagline {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-section .footer-content .logo-tagline img {
+  width: 155px;
+  height: 60px;
+}
+.footer-section .footer-content .logo-tagline p {
+  font-family: "Philosopher";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  color: rgba(4, 5, 5, 0.8);
+}
+.footer-section .footer-content .footer-links {
+  display: flex;
+  gap: 4rem;
+}
+.footer-section .footer-content .footer-links .navigation-links, .footer-section .footer-content .footer-links .footer-area-of-practices, .footer-section .footer-content .footer-links .footer-resources {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer-section .footer-content .footer-links .navigation-links .footer-nav-link, .footer-section .footer-content .footer-links .footer-area-of-practices .footer-nav-link, .footer-section .footer-content .footer-links .footer-resources .footer-nav-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #040505;
+}
+.footer-section .footer-content .footer-links .navigation-links .footer-links-title, .footer-section .footer-content .footer-links .footer-area-of-practices .footer-links-title, .footer-section .footer-content .footer-links .footer-resources .footer-links-title {
+  color: #717171;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+.footer-section .footer-bottom {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgba(4, 5, 5, 0.8);
+}
+.footer-section .footer-bottom .footer-sublinks-section {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
 }
 
 @layer utilities {

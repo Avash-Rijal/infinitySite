@@ -2,7 +2,8 @@ import "./globals.css";
 
 export default function Hero() {
   return (
-    <div className="hero">
+  <div className="hero">
+    <div className="container">
       <div className="hero-content">
         <div className="hero-text">
             <div className="hero-text-title">
@@ -22,5 +23,6 @@ export default function Hero() {
         </div>
       </div>
     </div>
+  </div>
   );
 }

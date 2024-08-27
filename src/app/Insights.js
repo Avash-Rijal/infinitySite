@@ -26,6 +26,7 @@ export default function Insights(){
     ];
 
     return (
+    <div className="container">
         <div className="insights-section">
             <div className="insights-section-header">
                 <h2>Read Our</h2>
@@ -52,5 +53,6 @@ export default function Insights(){
                     ))}
             </div>
         </div>
+    </div>
     );
 }

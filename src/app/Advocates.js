@@ -9,6 +9,7 @@ export default function Advocates(){
     ]
 
     return (
+    <div className="container">
         <div className="advocates-section">
             <div className="advocates-section-heading">
                 <h2>Meet Our</h2>
@@ -26,5 +27,6 @@ export default function Advocates(){
                 ))}
             </div>
         </div>
+    </div>
     );
 }

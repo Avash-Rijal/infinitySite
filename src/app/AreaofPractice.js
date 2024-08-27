@@ -7,6 +7,7 @@ export default function AreaofPractice() {
         {name:"Civil Law Practice", description: "Broad services in civil law, covering civil rights, property disputes, family law, and contracts. We offer personalized legal solutions to protect individual and entity rights.", imgsrc: "./bank.png"}
      ]
   return (
+    <div className="container">
     <div className="area-of-practice-section">
         <div className="area-of-practice-header">
 
@@ -39,6 +40,7 @@ export default function AreaofPractice() {
                 ))}
 
         </div>
+    </div>
     </div>
   );
 }

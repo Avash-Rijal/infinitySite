@@ -3,6 +3,7 @@ import Link from "next/link";
 
 export default function Header() {
     return (
+    <div className="container">
         <div className="header">
             <div className="logo">
                 <img src="logo.svg"></img>
@@ -35,5 +36,6 @@ export default function Header() {
                 </div>
             </div>
         </div>
+    </div>
     );
 }

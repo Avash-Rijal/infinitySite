@@ -27,6 +27,10 @@ body {
   justify-content: center;
 }
 
+main {
+  width: 100%;
+}
+
 .container {
   width: 1120px;
   margin-left: auto;
@@ -53,10 +57,10 @@ body {
   display: flex;
   gap: 2rem;
 }
-.header .navOptions .navLinksContainer div {
+.header .navOptions .navLinksContainer #navLink {
   font-size: 18px;
 }
-.header .navOptions .navLinksContainer div:hover {
+.header .navOptions .navLinksContainer #navLink:hover {
   color: #910606;
   cursor: pointer;
 }
@@ -98,7 +102,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/infinitypartners/public/heroImage.png");
+  background-image: url(/public/heroImage.png);
   box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1490196078);
 }
 .hero .hero-content {
@@ -607,6 +611,148 @@ body {
   display: flex;
   flex-direction: row;
   gap: 40px;
+}
+
+.terms-of-service {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7rem;
+}
+.terms-of-service .terms-of-service-title {
+  font-family: "Philosopher";
+  font-weight: 700;
+  font-size: 4rem;
+  color: #040505;
+  padding-bottom: 60px;
+}
+.terms-of-service .terms-of-service-updated-date {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 24px;
+  padding-bottom: 10px;
+}
+.terms-of-service .terms-of-service-paragraph-title {
+  font-family: "Philosopher";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+  padding-bottom: 6px;
+}
+.terms-of-service .terms-of-service-paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 10px;
+}
+.terms-of-service .terms-of-service-contact-info {
+  padding-bottom: 10px;
+}
+.terms-of-service .terms-of-service-bottom-content {
+  padding-top: 2rem;
+}
+
+.privacy-policy {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7rem;
+}
+.privacy-policy .privacy-policy-title {
+  font-family: "Philosopher";
+  font-weight: 700;
+  font-size: 4rem;
+  color: #040505;
+  padding-bottom: 60px;
+}
+.privacy-policy .privacy-policy-updated-date {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 24px;
+  padding-bottom: 10px;
+}
+.privacy-policy .privacy-policy-paragraph-title {
+  font-family: "Philosopher";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+  padding-bottom: 6px;
+}
+.privacy-policy .privacy-policy-paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 10px;
+}
+.privacy-policy .privacy-policy-contact-info-provider {
+  font-weight: 500;
+  line-height: 32px;
+  padding-bottom: 10px;
+}
+.privacy-policy .privacy-policy-contact-info {
+  padding-bottom: 10px;
+}
+
+.careers-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.careers-header .careers-heading {
+  font-family: "Philosopher";
+  width: 40%;
+}
+.careers-header .careers-heading > :first-child {
+  font-size: 3rem;
+  color: #910606;
+  font-weight: 700;
+}
+.careers-header .careers-heading > :nth-child(2) {
+  font-size: 3rem;
+  color: #040505;
+  font-weight: 700;
+}
+.careers-header .divider {
+  border: 1px solid #A5ACCB;
+  height: 7rem;
+}
+.careers-header .careers-description {
+  width: 40%;
+  font-size: 18px;
+  color: #333;
+}
+
+.careers-content {
+  margin-bottom: 8rem;
+}
+.careers-content .no-job-openings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.careers-content .no-job-openings img {
+  width: 32.5rem;
+}
+.careers-content .no-job-openings .no-job-openings-title {
+  font-family: "Philosopher";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: center;
+  color: #333;
+}
+.careers-content .no-job-openings .no-job-openings-text {
+  width: 486px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+  color: #333;
 }
 
 @layer utilities {

@@ -37,6 +37,10 @@ body {
   justify-content: center;
 }
 
+main{
+  width: 100%;
+}
+
 .container{
   width: 1120px; 
   margin: {
@@ -65,10 +69,10 @@ body {
       .navLinksContainer{
         display: flex;
         gap: 2rem;
-        div{
+        #navLink{
           font-size: 18px;
         }
-        div:hover{
+        #navLink:hover{
           color: $primary-red;
           cursor: pointer;
         }
@@ -115,7 +119,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("/infinitypartners/public/heroImage.png");
+    background-image: url(/public/heroImage.png);
     box-shadow: 0px 0px 10px 3px #00000026;
     .hero-content{
       display: flex;
@@ -662,6 +666,164 @@ body {
     }
   }
 
+  .terms-of-service{
+    width: 700px;
+    margin: {
+      left: auto;
+      right: auto;
+      top: 7rem;
+    };
+    .terms-of-service-title{
+      font-family: "Philosopher";
+      font-weight: 700;
+      font-size: 4rem;
+      color: $primary-black;
+      padding-bottom: 60px;
+    }
+  
+    .terms-of-service-updated-date{
+      font-weight: 400;
+      font-style: italic;
+      font-size: 1rem;
+      line-height: 24px;
+      padding-bottom: 10px;
+    }
+  
+    .terms-of-service-paragraph-title{
+      font-family: "Philosopher";
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 40px;
+      padding-bottom: 6px;
+    }
+  
+    .terms-of-service-paragraph{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      padding-bottom: 10px;
+    }
+
+    .terms-of-service-contact-info{
+      padding-bottom: 10px;
+    }
+
+    .terms-of-service-bottom-content{
+      padding-top: 2rem;
+    }
+  }
+
+  .privacy-policy{
+    width: 700px;
+    margin: {
+      left: auto;
+      right: auto;
+      top: 7rem;
+    };
+    .privacy-policy-title{
+      font-family: "Philosopher";
+      font-weight: 700;
+      font-size: 4rem;
+      color: $primary-black;
+      padding-bottom: 60px;
+    }
+  
+    .privacy-policy-updated-date{
+      font-weight: 400;
+      font-style: italic;
+      font-size: 1rem;
+      line-height: 24px;
+      padding-bottom: 10px;
+    }
+  
+    .privacy-policy-paragraph-title{
+      font-family: "Philosopher";
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 40px;
+      padding-bottom: 6px;
+    }
+  
+    .privacy-policy-paragraph{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      padding-bottom: 10px;
+    }
+
+    .privacy-policy-contact-info-provider{
+      font-weight: 500;
+      line-height: 32px;
+      padding-bottom: 10px;
+
+    }
+
+    .privacy-policy-contact-info{
+      padding-bottom: 10px;
+    }
+  }
+
+  .careers-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    .careers-heading{
+        font-family: 'Philosopher';
+        width: 40%;
+      }
+    .careers-heading > :first-child{
+        font-size: 3rem;
+        color: $primary-red;
+        font-weight: 700;
+      }
+    .careers-heading > :nth-child(2){
+        font-size: 3rem;
+        color: $primary-black;
+        font-weight: 700;
+      }
+
+      .divider{
+        border: 1px solid #A5ACCB;
+        height: 7rem; 
+      }
+
+      .careers-description{
+        width: 40%;
+        font-size: 18px;
+        color: $dark-grey;
+      }
+  }
+
+  .careers-content{
+    margin-bottom: 8rem;
+    .no-job-openings{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      img{
+        width: 32.5rem;
+      }
+      .no-job-openings-title{
+        font-family: "Philosopher";
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 50px;
+        text-align: center;
+        color: $dark-grey;
+      }
+      .no-job-openings-text{
+        width: 486px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        text-align: center;
+        color: $dark-grey;
+      }
+    }
+  }
 
 
 @layer utilities {

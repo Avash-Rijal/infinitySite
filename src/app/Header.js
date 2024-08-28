@@ -5,31 +5,31 @@ export default function Header() {
     return (
     <div className="container">
         <div className="header">
-            <div className="logo">
+            <Link href="/" className="logo">
                 <img src="logo.svg"></img>
-            </div>
+            </Link>
             <div className="navOptions">
                 <div className="navLinksContainer">
-                        <div className="home" id="navLink">Home</div>
-                        <div className="about-us" id="navLink">About Us</div>
-                        <div className="area-of-practice" id="navLink">Area of Practice
-                            <div className="sub-links-container">
-                                <Link href={""} className="sub-links">Business Law</Link>
-                                <Link href={""} className="sub-links">Dispute Resolution</Link>
-                                <Link href={""} className="sub-links">Legal Reform</Link>
-                                <Link href={""} className="sub-links">Civil Law Form</Link>
-                            </div>
-                        </div>
-                        <div className="insights" id="navLink">Insights
-                            <div className="sub-links-container">
-                                <Link href={""} className="sub-links">Test Insights</Link>
-                                <Link href={""} className="sub-links">Test Insights</Link>
-                                <Link href={""} className="sub-links">Test Insights</Link>
-                                <Link href={""} className="sub-links">Test Insights</Link>
-                            </div>
-                        </div>
-                        <div className="attorneys" id="navLink">Attorneys</div>
-                        <div className="careers" id="navLink">Careers</div>
+                        <Link href="/" className="main-links home" id="navLink">Home</Link>
+                        <Link href="" className="about-us" id="navLink">About Us</Link>
+                        <Link href="" className="area-of-practice" id="navLink">Area of Practice
+                            <ul className="sub-links-container">
+                                <li href="" className="sub-links">Business Law</li>
+                                <li href="" className="sub-links">Dispute Resolution</li>
+                                <li href="" className="sub-links">Legal Reform</li>
+                                <li href="" className="sub-links">Civil Law Form</li>
+                            </ul>
+                        </Link>
+                        <Link href="" className="insights" id="navLink">Insights
+                            <ul className="sub-links-container">
+                                <li href="" className="sub-links">Test Insights</li>
+                                <li href="" className="sub-links">Test Insights</li>
+                                <li href="" className="sub-links">Test Insights</li>
+                                <li href="" className="sub-links">Test Insights</li>
+                            </ul>
+                        </Link>
+                        <Link href="" className="attorneys" id="navLink">Attorneys</Link>
+                        <Link href="" className="careers" id="navLink">Careers</Link>
                 </div>
                 <div className="searchIcon">
                     <img src="searchIcon.svg"></img>

@@ -44,11 +44,11 @@ export default function Footer(){
                     </div>
                 </div>
                 <div className="footer-bottom">
-                    <div>Designed and Developed with Yojana</div>
+                    <div>Designed and Developed with Yojana!</div>
                     <div>© 2024 Infinity and Partners Pvt. Ltd.</div>
                     <div className="footer-sublinks-section">
-                        <Link href="" className="footer-sublink">Terms of Service</Link>
-                        <Link href="" className="footer-sublink">Privacy Policy</Link>
+                        <Link href="/terms-of-service" className="footer-sublink">Terms of Service</Link>
+                        <Link href="/privacy-policy" className="footer-sublink">Privacy Policy</Link>
                         <Link href="" className="footer-sublink">Cookies</Link>
                     </div>
                 </div>

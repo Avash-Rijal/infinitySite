@@ -559,6 +559,32 @@ main{
         top: 3rem;
         bottom: 3rem;
       };
+      .newsletter-section-text-dynamic{
+        width: 27rem;
+        .newsletter-section-text-header{
+          margin-bottom: 12px;
+        }
+        .newsletter-section-text-header > :nth-child(1){
+          font-family: 'Philosopher';
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 26px;
+          color: $primary-red;
+        }
+        .newsletter-section-text-header > :nth-child(2){
+          font-family: 'Philosopher';
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 26px;
+          color: $primary-black;
+        }
+        p{
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 18px;
+          color: $dark-grey;
+        }
+      }
       .newsletter-section-text{
         font-family: "Philosopher";
         font-size: 1.5rem;
@@ -821,6 +847,96 @@ main{
         line-height: 25px;
         text-align: center;
         color: $dark-grey;
+      }
+    }
+  }
+
+  .about-us-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    .about-us-page-heading{
+        font-family: 'Philosopher';
+        width: 40%;
+      }
+    .about-us-page-heading > :first-child{
+        font-size: 3rem;
+        color: $primary-red;
+        font-weight: 700;
+      }
+    .about-us-page-heading > :nth-child(2){
+        font-size: 3rem;
+        color: $primary-black;
+        font-weight: 700;
+      }
+
+      .divider{
+        border: 1px solid #A5ACCB;
+        height: 7rem; 
+      }
+
+      .about-us-header-description{
+        width: 40%;
+        font-size: 18px;
+        color: $dark-grey;
+      }
+  }
+
+  .about-us-page-hero{
+    margin: {
+      left: auto;
+      right: auto;
+    };
+    img{
+      height: 34rem;
+    }
+  }
+
+  .about-us-page-content{
+    width: 60%;
+    h2{
+      font-family: "Philosopher";
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 40px;
+      color: $primary-black;
+      margin-bottom: 1rem;
+    }
+    p{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: $dark-grey;
+      margin-bottom: 4rem;
+    }
+    .about-us-page-values{
+      margin-top: 2rem;
+      margin-bottom: 16rem;
+      .about-us-page-value-box{
+        width: 44rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        gap: 24px;
+        border: 1px solid #D0D0D0;
+        border-radius: 4px;
+        box-shadow: 2px 3px 12px 0px #00000026;
+        padding: 24px 36px 24px 36px;
+        .about-us-page-value-image{
+            width: 9rem;
+            height: 7rem;
+            padding: 24px;
+        }
+        p{
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: $dark-grey;
+          margin-bottom: 0;
+          width: 29rem;
+        }
       }
     }
   }

@@ -1,13 +1,13 @@
 import Footer from "../Footer";
 import "../globals.css";
 import Header from "../Header";
-import Careers from "./Careers";
+import AboutUs from "./AboutUs";
 
 export default function Home() {
   return (
     <main>
         <Header/>  
-        <Careers/>
+        <AboutUs/>
         <Footer/>
     </main>
   );

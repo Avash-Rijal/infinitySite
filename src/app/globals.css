@@ -511,6 +511,32 @@ main {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
+.footer-section .newsletter-section .newsletter-section-text-dynamic {
+  width: 27rem;
+}
+.footer-section .newsletter-section .newsletter-section-text-dynamic .newsletter-section-text-header {
+  margin-bottom: 12px;
+}
+.footer-section .newsletter-section .newsletter-section-text-dynamic .newsletter-section-text-header > :nth-child(1) {
+  font-family: "Philosopher";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+  color: #910606;
+}
+.footer-section .newsletter-section .newsletter-section-text-dynamic .newsletter-section-text-header > :nth-child(2) {
+  font-family: "Philosopher";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+  color: #040505;
+}
+.footer-section .newsletter-section .newsletter-section-text-dynamic p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333;
+}
 .footer-section .newsletter-section .newsletter-section-text {
   font-family: "Philosopher";
   font-size: 1.5rem;
@@ -753,6 +779,92 @@ main {
   line-height: 25px;
   text-align: center;
   color: #333;
+}
+
+.about-us-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.about-us-page-header .about-us-page-heading {
+  font-family: "Philosopher";
+  width: 40%;
+}
+.about-us-page-header .about-us-page-heading > :first-child {
+  font-size: 3rem;
+  color: #910606;
+  font-weight: 700;
+}
+.about-us-page-header .about-us-page-heading > :nth-child(2) {
+  font-size: 3rem;
+  color: #040505;
+  font-weight: 700;
+}
+.about-us-page-header .divider {
+  border: 1px solid #A5ACCB;
+  height: 7rem;
+}
+.about-us-page-header .about-us-header-description {
+  width: 40%;
+  font-size: 18px;
+  color: #333;
+}
+
+.about-us-page-hero {
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-us-page-hero img {
+  height: 34rem;
+}
+
+.about-us-page-content {
+  width: 60%;
+}
+.about-us-page-content h2 {
+  font-family: "Philosopher";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  color: #040505;
+  margin-bottom: 1rem;
+}
+.about-us-page-content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #333;
+  margin-bottom: 4rem;
+}
+.about-us-page-content .about-us-page-values {
+  margin-top: 2rem;
+  margin-bottom: 16rem;
+}
+.about-us-page-content .about-us-page-values .about-us-page-value-box {
+  width: 44rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 24px;
+  border: 1px solid #D0D0D0;
+  border-radius: 4px;
+  box-shadow: 2px 3px 12px 0px rgba(0, 0, 0, 0.1490196078);
+  padding: 24px 36px 24px 36px;
+}
+.about-us-page-content .about-us-page-values .about-us-page-value-box .about-us-page-value-image {
+  width: 9rem;
+  height: 7rem;
+  padding: 24px;
+}
+.about-us-page-content .about-us-page-values .about-us-page-value-box p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+  margin-bottom: 0;
+  width: 29rem;
 }
 
 @layer utilities {

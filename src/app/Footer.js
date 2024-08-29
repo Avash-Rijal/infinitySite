@@ -1,13 +1,30 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from 'next/navigation';
 
 export default function Footer(){
+  const pathname = usePathname();
+    
     return (
         <div className="footer-section">
             <div className="container">
                 <div className="newsletter-section">
+                    {
+                    pathname === "/about-us" || pathname === "/careers"  ? 
+                    <div className="newsletter-section-text-dynamic">
+                        <div className="newsletter-section-text-header">      <h2>Want to Stay</h2>
+                            <h2>Updated on Job Openings?</h2>
+                        </div>
+                        <p>Enter your email address below to receive notifications about the latest career opportunities. We'll keep you informed!</p>
+
+                    </div>
+                    : 
                     <div className="newsletter-section-text">
                         Join our newsletter to keep up to date with us!
                     </div>
+                    }
+
                     <div className="newsletter-section-input">
                         <img src="./userIcon.png"></img>
                         <input type="mail" placeholder="Enter your email"></input>

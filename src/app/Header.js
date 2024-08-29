@@ -11,7 +11,7 @@ export default function Header() {
             <div className="navOptions">
                 <div className="navLinksContainer">
                         <Link href="/" className="main-links home" id="navLink">Home</Link>
-                        <Link href="" className="about-us" id="navLink">About Us</Link>
+                        <Link href="/about-us" className="about-us" id="navLink">About Us</Link>
                         <Link href="" className="area-of-practice" id="navLink">Area of Practice
                             <ul className="sub-links-container">
                                 <li href="" className="sub-links">Business Law</li>
@@ -29,7 +29,7 @@ export default function Header() {
                             </ul>
                         </Link>
                         <Link href="" className="attorneys" id="navLink">Attorneys</Link>
-                        <Link href="" className="careers" id="navLink">Careers</Link>
+                        <Link href="/careers" className="careers" id="navLink">Careers</Link>
                 </div>
                 <div className="searchIcon">
                     <img src="searchIcon.svg"></img>

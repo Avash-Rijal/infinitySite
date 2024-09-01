@@ -28,7 +28,7 @@ export default function Header() {
                                 <li href="" className="sub-links">Test Insights</li>
                             </ul>
                         </Link>
-                        <Link href="" className="attorneys" id="navLink">Attorneys</Link>
+                        <Link href="/advocates" className="attorneys" id="navLink">Attorneys</Link>
                         <Link href="/careers" className="careers" id="navLink">Careers</Link>
                 </div>
                 <div className="searchIcon">

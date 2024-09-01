@@ -12,7 +12,34 @@ export default function Careers() {
             job_type: "Full Time",
             job_description:"Explore thousands of high-quality career page images on Dribbble. Your resource to get inspired, discover and connect with designers worldwide. Explore thousands of high-quality career page images on Dribbble. Your resource to get inspired, discover and connect with designers worldwide. ",
             salary : "43,000",
-        }
+        },
+        {
+            date: "12’th January 2024",
+            title: "Advocate Intern",
+            category: "Commercial Law",
+            job_level: "Entry Level",
+            job_type: "Full Time",
+            job_description:"Explore thousands of high-quality career page images on Dribbble. Your resource to get inspired, discover and connect with designers worldwide. Explore thousands of high-quality career page images on Dribbble. Your resource to get inspired, discover and connect with designers worldwide. ",
+            salary : "43,000",
+        },
+        {
+            date: "12’th January 2024",
+            title: "Advocate Intern",
+            category: "Commercial Law",
+            job_level: "Entry Level",
+            job_type: "Full Time",
+            job_description:"Explore thousands of high-quality career page images on Dribbble. Your resource to get inspired, discover and connect with designers worldwide. Explore thousands of high-quality career page images on Dribbble. Your resource to get inspired, discover and connect with designers worldwide. ",
+            salary : "43,000",
+        },
+        {
+            date: "12’th January 2024",
+            title: "Advocate Intern",
+            category: "Commercial Law",
+            job_level: "Entry Level",
+            job_type: "Full Time",
+            job_description:"Explore thousands of high-quality career page images on Dribbble. Your resource to get inspired, discover and connect with designers worldwide. Explore thousands of high-quality career page images on Dribbble. Your resource to get inspired, discover and connect with designers worldwide. ",
+            salary : "43,000",
+        },
     ]; 
     return (
     <div className="container">
@@ -38,20 +65,25 @@ export default function Careers() {
                 careersContent === 1 ? 
             
                 <div className="job-openings">
-                    {job_openings.map(data => {
+                    {job_openings.map(data => (
                         <div className="job-opening-box">
-                            <div className="job-opening-date">{data.date}</div>
+                            <div className="job-opening-date">Posted on {data.date}</div>
                             <div className="job-opening-title">{data.title}</div>
                             <div className="job-opening-category">{data.category}</div>
-                            <div className="job-opening-level">{data.job_level}</div>
-                            <div className="job-opening-type">{data.job_type}</div>
+                            <div className="job-opening-level-type">
+                                <div className="job-opening-level">{data.job_level}</div>
+                                <div className="job-opening-type">{data.job_type}</div>
+                            </div>
                             <div className="job-opening-description">{data.job_description}</div>
                             <div className="job-opening-bottom">
-                                <div>{data.salary}</div>
-                                <button>Join Now</button>
+                                <div>NPR. {data.salary}</div>
+                                <button>
+                                    <span>Join Now</span>
+                                    <img src="/join_now_arrow.svg"></img>
+                                </button>
                                 </div>
                         </div>
-                    })}
+                    ))}
                 </div> 
                 :
                 <div className="no-job-openings">

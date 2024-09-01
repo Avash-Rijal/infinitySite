@@ -37,8 +37,16 @@ body {
   justify-content: center;
 }
 
+main{
+  width: 100%;
+}
+
 .container{
   width: 1120px; 
+  margin: {
+    left: auto;
+    right: auto;
+  };
 }
 
   .header {
@@ -61,10 +69,10 @@ body {
       .navLinksContainer{
         display: flex;
         gap: 2rem;
-        div{
+        #navLink{
           font-size: 18px;
         }
-        div:hover{
+        #navLink:hover{
           color: $primary-red;
           cursor: pointer;
         }
@@ -111,7 +119,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("/infinitypartners/public/heroImage.png");
+    background-image: url(/public/heroImage.png);
     box-shadow: 0px 0px 10px 3px #00000026;
     .hero-content{
       display: flex;
@@ -170,15 +178,17 @@ body {
     .area-of-practice-heading > :first-child{
         font-size: 3rem;
         color: $primary-red;
+        font-weight: 700;
       }
     .area-of-practice-heading > :nth-child(2){
         font-size: 3rem;
         color: $primary-black;
+        font-weight: 700;
       }
 
       .divider{
         border: 1px solid #A5ACCB;
-        height: 5rem;
+        height: 7rem; 
       }
 
       .area-of-practice-description{
@@ -237,6 +247,1651 @@ body {
       }
     }
   }
+
+  .insights-section{
+      margin-top: 4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+    .insights-section-header {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.5rem;
+      font-family: 'Philosopher';
+      width: 40%;
+    }
+    .insights-section-header > :nth-child(1){
+      color: $primary-red;
+      font-size: 3rem;
+      font-weight: 700;
+
+    }
+    .insights-section-header > :nth-child(2){
+      color: $primary-black;
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .insights-section-main{
+      display: flex;
+      justify-content: space-between;
+      .insights-section-main-image{
+        width: 33rem;
+        cursor: pointer;
+      }
+      .insights-section-main-content{
+        width: 35rem;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .insights-section-main-date{
+          font-size: 20px;
+          color: $primary-blue;
+          font-weight: 400;
+          width: 100%;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #3A4553;
+        }
+        .insights-section-main-title{
+          font-weight: 700;
+          font-size: 35px;
+          line-height: 40px;
+          font-family: 'Philosopher';
+          color: $primary-black;
+          cursor: pointer;
+        }
+        .insights-section-main-description{
+          font-weight: 400;
+          font-size: 20px;
+        }
+        .insights-section-main-link{
+          font-size: 22px;
+          font-weight: 500;
+          color: $primary-blue;
+          line-height: 28px;
+          // padding-bottom: ;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .insights-section-other-content{
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+      .insights-contents{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .insights-contents-date{
+          font-size: 20px;
+          line-height: 28px;
+          font-weight: 400;
+          border-bottom: 1px solid $primary-black;
+          color: $primary-blue;
+          padding-bottom: 2px;
+        }
+
+        .insights-contents-title{
+          font-family: 'Philosopher';
+          font-size: 26px;
+          font-weight: 700;
+          line-height: 30px;
+        }
+
+        .insights-contents-description{
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 28px;
+        }
+
+        .insights-contents-link{
+          font-size: 22px;
+          font-weight: 500;
+          line-height: 28px;
+          color: $primary-blue;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .advocates-section{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    .advocates-section-heading > :nth-child(1){
+        color: $primary-red;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 65px;
+        font-family: 'Philosopher';
+    }
+    .advocates-section-heading > :nth-child(2){
+        color: $primary-black;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 65px;
+        font-family: 'Philosopher';
+    }
+
+    .advocates-section-list{
+      display: flex;
+      gap: 68px;
+      .advocates-individual-box{
+        background-color: #F3F3F3;
+        box-shadow: 4px 4px 5.8px 0px #CFCFCF;
+        border: 1px solid rgba(32, 50, 127, 0.5);
+        padding: 24px;
+        width: 16rem;
+        .advocates-individual-box-name{
+          width: 11.5rem;
+          font-family: 'Philosopher';
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 28px;
+          padding-top: 5px;
+        }
+        .advocates-individual-box-designation{
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 22px;
+          color: $dark-grey;
+        }
+      }
+    }
+  }
+
+  .appointment-section{
+    background-color: #F7F7F7; 
+    margin-top: 4rem;
+    padding: {
+      top: 5rem;
+      bottom: 5rem;
+    };
+
+    .appointment-section-content{
+      display: flex;
+      justify-content: space-between;
+      .appointment-section-text-section{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+      }
+
+      .appointment-section-form{
+        form{
+          display: flex;
+          flex-direction: column;
+          gap: 3.25rem;
+        }
+        .form-details{
+          display: flex;
+          gap: 2rem;
+          input{
+            background: transparent;
+            outline: none;
+            border-bottom: 3px solid $light-grey;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 65px;
+            color: #404040CC;
+          }
+          input[type="number"]::-webkit-outer-spin-button,
+          input[type="number"]::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+          }
+        } 
+        .form-message{
+          textarea{
+            background: transparent;
+            outline: none;
+            border-bottom: 3px solid $light-grey;
+            font-weight: 500;
+            font-size: 18px;
+            color: #404040CC;
+            resize: none;
+            width: 100%;
+          }
+        }
+        .appointment-form-submit-button{
+          width: 21rem;
+          padding: 28px 32px 28px 32px;
+          gap: 11px;
+          font-size: 18px;
+          border-radius: 4px;
+          color: #F7F7F7;
+          opacity: 0px;
+          background: #20327F;
+        }
+      }
+    }
+
+    .appointment-section-header > :nth-child(1){
+      font-size: 60px;
+      line-height: 65px;
+      font-family: "Philosopher";
+      font-weight: 700;
+      color: $primary-red;
+    }
+    .appointment-section-header > :nth-child(2){
+      font-size: 60px;
+      line-height: 65px;
+      font-family: "Philosopher";
+      font-weight: 700;
+      color: $primary-black;
+    }
+
+    .appointment-section-image{
+      width: 26rem;
+      height: 40rem; 
+    }
+  }
+
+  .office-location-container{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    .office-location-header > :nth-child(1){
+      font-family: 'Philosopher';
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 65px;
+      color: $primary-red;
+    }
+    .office-location-header > :nth-child(2){
+      font-family: 'Philosopher';
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 65px;
+      color: $primary-black;
+    }
+
+    .office-location-contents{
+      display: flex;
+      gap: 4rem;
+      .office-location-map{
+        width: 32rem;
+        height: 19rem;
+        border: 3px solid $light-grey;
+        border-radius: 4px;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .office-contact-details{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .divider{
+          border: 1px solid #C8C4C4;
+          width: 105px;
+        }
+
+        div{
+          font-size: 20px;
+          font-weight: 300;
+          span{
+            font-size: 20px;
+            font-weight: 600;
+            color: $primary-red;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-section{
+    background-color: #EFEFEF;
+    margin-top: 4rem;
+    .newsletter-section{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      padding: {
+        top: 3rem;
+        bottom: 3rem;
+      };
+      .newsletter-section-text-dynamic{
+        width: 27rem;
+        .newsletter-section-text-header{
+          margin-bottom: 12px;
+        }
+        .newsletter-section-text-header > :nth-child(1){
+          font-family: 'Philosopher';
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 26px;
+          color: $primary-red;
+        }
+        .newsletter-section-text-header > :nth-child(2){
+          font-family: 'Philosopher';
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 26px;
+          color: $primary-black;
+        }
+        p{
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 18px;
+          color: $dark-grey;
+        }
+      }
+      .newsletter-section-text{
+        font-family: "Philosopher";
+        font-size: 1.5rem;
+        line-height: 26px;
+        font-weight: 700;
+        color: $primary-black;
+        width: 320px;
+      }
+      .newsletter-section-input{
+        display: flex;
+        align-items: center;
+        border: 1px solid $primary-blue;
+        border-radius: 5px;
+        width: 540px;
+        gap: 10px;
+        img{
+          padding-left: 24px;
+        }
+        input{
+          padding: {
+            top: 14px;
+            right: 24px;
+            bottom: 14px;
+          }
+          gap: 10px;
+          opacity: 0px;
+          background: transparent;
+          outline: none;
+          font-size: 14px;
+          line-height: 20px;
+          color: #040505B8;
+          font-weight: 400;
+          width: 404px;
+        }
+        button{
+          width: 134px;
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 500;
+          border-left: 1px solid $primary-blue;
+          padding: 14px 28px 14px 28px;
+        }
+      }
+    }
+    .footer-content{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 300px;
+      border-top: 1px solid $light-grey;
+      border-bottom: 1px solid $light-grey;
+      .logo-tagline{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        img{
+          width: 155px;
+          height: 60px;
+        }
+        p{
+          font-family: "Philosopher";
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 22px;
+          color: #040505CC;
+          ;
+        }
+      }
+      .footer-links{
+        display: flex;
+        gap: 4rem;
+        .navigation-links, .footer-area-of-practices, .footer-resources{
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          .footer-nav-link{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: $primary-black;
+          }
+          .footer-links-title{
+            color: #717171;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+    .footer-bottom{
+      padding-top: 3rem;
+      padding-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      color: #040505CC;
+      .footer-sublinks-section{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+      }
+    }
+  }
+
+  .terms-of-service{
+    width: 700px;
+    margin: {
+      left: auto;
+      right: auto;
+      top: 7rem;
+    };
+    .terms-of-service-title{
+      font-family: "Philosopher";
+      font-weight: 700;
+      font-size: 4rem;
+      color: $primary-black;
+      padding-bottom: 60px;
+    }
+  
+    .terms-of-service-updated-date{
+      font-weight: 400;
+      font-style: italic;
+      font-size: 1rem;
+      line-height: 24px;
+      padding-bottom: 10px;
+    }
+  
+    .terms-of-service-paragraph-title{
+      font-family: "Philosopher";
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 40px;
+      padding-bottom: 6px;
+    }
+  
+    .terms-of-service-paragraph{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      padding-bottom: 10px;
+    }
+
+    .terms-of-service-contact-info{
+      padding-bottom: 10px;
+    }
+
+    .terms-of-service-bottom-content{
+      padding-top: 2rem;
+    }
+  }
+
+  .privacy-policy{
+    width: 700px;
+    margin: {
+      left: auto;
+      right: auto;
+      top: 7rem;
+    };
+    .privacy-policy-title{
+      font-family: "Philosopher";
+      font-weight: 700;
+      font-size: 4rem;
+      color: $primary-black;
+      padding-bottom: 60px;
+    }
+  
+    .privacy-policy-updated-date{
+      font-weight: 400;
+      font-style: italic;
+      font-size: 1rem;
+      line-height: 24px;
+      padding-bottom: 10px;
+    }
+  
+    .privacy-policy-paragraph-title{
+      font-family: "Philosopher";
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 40px;
+      padding-bottom: 6px;
+    }
+  
+    .privacy-policy-paragraph{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      padding-bottom: 10px;
+    }
+
+    .privacy-policy-contact-info-provider{
+      font-weight: 500;
+      line-height: 32px;
+      padding-bottom: 10px;
+
+    }
+
+    .privacy-policy-contact-info{
+      padding-bottom: 10px;
+    }
+  }
+
+  .careers-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    .careers-heading{
+        font-family: 'Philosopher';
+        width: 40%;
+      }
+    .careers-heading > :first-child{
+        font-size: 3rem;
+        color: $primary-red;
+        font-weight: 700;
+      }
+    .careers-heading > :nth-child(2){
+        font-size: 3rem;
+        color: $primary-black;
+        font-weight: 700;
+      }
+
+      .divider{
+        border: 1px solid #A5ACCB;
+        height: 7rem; 
+      }
+
+      .careers-description{
+        width: 40%;
+        font-size: 18px;
+        color: $dark-grey;
+      }
+  }
+
+  .careers-content{
+    margin-bottom: 8rem;
+    .job-openings{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 60px;
+      .job-opening-box{
+        width: 530px;
+        padding: 16px 24px 16px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        border: 1px solid #9099BF;
+        box-shadow: 4px 3px 12px 0px #00000040;
+        .job-opening-date{
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 28px;
+          text-align: left;
+          color: $dark-grey;
+        }
+        .job-opening-title{
+          font-family: "Philosopher";
+          font-size: 28px;
+          font-weight: 700;
+          line-height: 28px;
+          text-align: left;
+          color: $primary-blue;
+        }
+        .job-opening-category{
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 28px;
+          text-align: left;          
+        }
+        .job-opening-level-type{
+          display: flex;
+          gap: 12px;
+          .job-opening-level{
+            color: #404040;
+            width: 60px;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 28px;
+            text-align: center;
+            width: 5rem;
+            padding: 0px 8px;
+            border-radius: 50px;
+            background-color: #ECECEC;
+          }
+          .job-opening-type{
+            color: #404040;
+            width: 60px;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 28px;
+            text-align: center;
+            width: 5rem;
+            padding: 0px 8px;
+            border-radius: 50px;
+            background-color: #ECECEC;
+          }
+        }
+
+        .job-opening-description{
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 20px;
+          text-align: left;
+        }
+
+        .job-opening-bottom{
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .job-opening-bottom > :nth-child(1){
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 28px;
+          text-align: left;
+        }
+        .job-opening-bottom > :nth-child(2){
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 18px;
+          text-align: left;
+          background-color: #20327F;          ;
+          width: 6.25rem;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 6px;
+          gap: 12px;
+          border-radius: 4px;
+          color: white;      
+        }
+      }
+    }
+    .no-job-openings{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      img{
+        width: 32.5rem;
+      }
+      .no-job-openings-title{
+        font-family: "Philosopher";
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 50px;
+        text-align: center;
+        color: $dark-grey;
+      }
+      .no-job-openings-text{
+        width: 486px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        text-align: center;
+        color: $dark-grey;
+      }
+    }
+  }
+
+  .about-us-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    .about-us-page-heading{
+        font-family: 'Philosopher';
+        width: 40%;
+      }
+    .about-us-page-heading > :first-child{
+        font-size: 3rem;
+        color: $primary-red;
+        font-weight: 700;
+      }
+    .about-us-page-heading > :nth-child(2){
+        font-size: 3rem;
+        color: $primary-black;
+        font-weight: 700;
+      }
+
+      .divider{
+        border: 1px solid #A5ACCB;
+        height: 7rem; 
+      }
+
+      .about-us-header-description{
+        width: 40%;
+        font-size: 18px;
+        color: $dark-grey;
+      }
+  }
+
+  .about-us-page-hero{
+    margin: {
+      left: auto;
+      right: auto;
+    };
+    img{
+      height: 34rem;
+    }
+  }
+
+  .about-us-page-content{
+    width: 60%;
+    h2{
+      font-family: "Philosopher";
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 40px;
+      color: $primary-black;
+      margin-bottom: 1rem;
+    }
+    p{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: $dark-grey;
+      margin-bottom: 4rem;
+    }
+    .about-us-page-values{
+      margin-top: 2rem;
+      margin-bottom: 16rem;
+      .about-us-page-value-box{
+        width: 44rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        gap: 24px;
+        border: 1px solid #D0D0D0;
+        border-radius: 4px;
+        box-shadow: 2px 3px 12px 0px #00000026;
+        padding: 24px 36px 24px 36px;
+        .about-us-page-value-image{
+            width: 9rem;
+            height: 7rem;
+            padding: 24px;
+        }
+        p{
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: $dark-grey;
+          margin-bottom: 0;
+          width: 29rem;
+        }
+      }
+    }
+  }
+
+  .advocates-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    .advocates-page-heading{
+        font-family: 'Philosopher';
+        width: 50%;
+      }
+    .advocates-page-heading > :first-child{
+        font-size: 3rem;
+        color: $primary-red;
+        font-weight: 700;
+      }
+    .advocates-page-heading > :nth-child(2){
+        font-size: 3rem;
+        color: $primary-black;
+        font-weight: 700;
+      }
+
+      .divider{
+        border: 1px solid #A5ACCB;
+        height: 7rem; 
+      }
+
+      .advocates-page-description{
+        width: 40%;
+        font-size: 18px;
+        color: $dark-grey;
+      }
+  }
+
+  .advocates-page-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin: {
+      left: auto;
+      right: auto;
+      bottom: 12rem;
+    };
+    .advocate_card{
+      cursor: pointer;
+      padding: 2rem;
+      background: #F3F3F3;
+      border: 1px solid #20327F80;
+      box-shadow: 4px 3px 12px 0px #CFCFCF;
+      width: 20.5rem;
+      .advocate_name{
+        font-family: "Philosopher";
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 36px;
+        text-align: left;
+      }
+      .advocate_designation{
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 29px;
+        text-align: left;
+        color: $dark-grey;
+      }
+    }
+  }
+
+  .related_articles_section{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    .related_articles_header{
+      font-family: "Philosopher";
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 34px;
+      text-align: left;
+    }
+    .related_articles_content_section{
+      display: flex;
+      gap: 4rem;
+      .related_articles_card{
+        width: 16.5rem;
+        border: 1px solid #DDDDDD;
+        border-radius: 4px;
+        cursor: pointer;
+        .related-articles-category-contents{
+          width: 100%;
+          padding: 12px 16px 12px 16px;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          .related-articles-category-date{
+            width: 100%;
+            display: flex;
+            border-bottom: 1px solid $dark-grey;
+            padding: {
+              top: 0.5rem;
+              bottom: 0.5rem;
+            }
+            .related-articles-category{
+              color: $primary-blue;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 16px;
+              border-right: 1px solid $primary-blue;
+              padding-right: 0.5rem;
+            }
+            .related-articles-date{
+              color: $primary-blue;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 16px;
+              padding-left: 0.5rem;
+            }
+          }
+        }
+        .related-articles-title{
+          font-family: "Philosopher";
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 20px;
+          text-align: left;
+          color: $dark-grey;
+        }
+        .related-articles-description{
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 16px;
+          color: $primary-black; 
+        }
+        .related-articles-link{
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 18px;
+          text-align: left;
+          text-decoration: underline;
+          color: $primary-blue;
+        }
+      }
+    }
+  }
+
+  .advocate_details_introduction{
+    display: flex;
+    gap: 60px;
+    margin-top: 4rem;
+    .advocate_image{
+      width: 25rem;
+      border: 0px;
+      border-radius: 4px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .advocate_details_introduction_content{
+      display: flex;
+      flex-direction: column;
+      width: 41.25rem;
+    }
+    .advocate_details_introduction_content > :nth-child(1){
+      font-family: "Philosopher";
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 36px;
+      text-align: left;
+      color: $primary-red;
+      margin-bottom: 6px;
+    }
+    .advocate_details_introduction_content > :nth-child(2){
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 32px;
+      text-align: left;
+      color: #616161;
+      margin-bottom: 12px;
+    }
+    .advocate_details_introduction_content > :nth-child(3){
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+      color: $primary-black;
+      margin-bottom: 24px;
+    }
+    .advocate_details_introduction_content > :nth-child(4){
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+      color: $primary-black;
+      margin-bottom: 24px;
+    }
+    .advocate_details_introduction_content > :nth-child(5){
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 18px;
+      text-align: left;  
+      color: $primary-black; 
+      margin-bottom: 12px;   
+    }
+    .advocate_details_introduction_content > :nth-child(6){
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 18px;
+      text-align: left;  
+      color: $primary-black;    
+    }
+  }
+
+  .advocate_details_page_bottom_contents{
+    display: flex;
+    margin-top: 4rem;
+    justify-content: space-between;
+  }
+
+  .advocate_details_qualifications{
+    margin-bottom: 8rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    .advocate_practice_area{
+      h2{
+        font-family: "Philosopher";
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 40px;
+        text-align: left;
+        margin-bottom: 2rem;
+      }
+      .advocate_practice_area_card{
+        background: #F1F4FF;
+        width: 25rem;
+        padding: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 8px;
+        border: 1px solid border #DFE3F2;
+        opacity: 0px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        .advocate_practice_area_icon{
+          width: 3rem;
+        }
+        .advocate_practice_area_details > :nth-child(1){
+          font-family: "Philosopher";
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 27.5px;
+          text-align: left;   
+          margin-bottom: 4px;       
+        }
+        .advocate_practice_area_details > :nth-child(2){
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 18px;
+          text-align: left;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          width: 15rem;
+        }
+      }
+    }
+
+    .advocate_resolution_services{
+      h2{
+        margin-bottom: 2rem;
+        font-family: "Philosopher";
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 40px;
+        text-align: left;
+      }
+
+      .advocate_resolution_services_list{
+        list-style-type: disc;
+        li{
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 24px;
+          text-align: left;
+          margin-bottom: 12px;
+          margin-left: 1rem;
+        }
+        li::marker {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .advocate_qualifications{
+      h2{
+        margin-bottom: 2rem;
+        font-family: "Philosopher";
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 40px;
+        text-align: left;
+      }
+      .qualifications_card_container{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        .qualifications_card{
+          background: #FFFFFF;
+          width: 25rem;
+          padding: 12px 12px 12px 15px;
+          border-radius: 4px;
+          display: flex;
+          gap: 12px;
+          box-shadow: 0px 1px 4px 0px #00000033;
+          .qualification_card_content :nth-child(1){
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 20px;
+            text-align: left;
+            color: #2C2C2C;
+            margin-bottom: 6px;
+          }
+          .qualification_card_content :nth-child(2){
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 16px;
+            text-align: left;            
+          }
+        }
+      }
+    }
+
+    .advocate_affiliations{
+      h2{
+        margin-bottom: 2rem;
+        font-family: "Philosopher";
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 40px;
+        text-align: left;
+      }
+      .advocate_affiliations_container{
+        list-style-type: disc;
+        li{
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 24px;
+          text-align: left;
+          margin-bottom: 12px;
+          margin-left: 1rem;
+        }
+        li::marker {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .published_articles_section{
+    h2{
+      margin-bottom: 2rem;
+      font-family: "Philosopher";
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 40px;
+      text-align: left;
+    }
+    .published_articles_content_section{
+      display: flex;
+      flex-direction: column  ;
+      gap: 4rem;
+      .published_articles_card{
+        width: 16.5rem;
+        border: 1px solid #DDDDDD;
+        border-radius: 4px;
+        cursor: pointer;
+        .published_articles-category-contents{
+          width: 100%;
+          padding: 12px 16px 12px 16px;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          .published_articles-category-date{
+            width: 100%;
+            display: flex;
+            border-bottom: 1px solid $dark-grey;
+            padding: {
+              top: 0.5rem;
+              bottom: 0.5rem;
+            }
+            .published_articles-category{
+              color: $primary-blue;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 16px;
+              border-right: 1px solid $primary-blue;
+              padding-right: 0.5rem;
+            }
+            .published_articles-date{
+              color: $primary-blue;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 16px;
+              padding-left: 0.5rem;
+            }
+          }
+        }
+        .published_articles-title{
+          font-family: "Philosopher";
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 20px;
+          text-align: left;
+          color: $dark-grey;
+        }
+        .published_articles-description{
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 16px;
+          color: $primary-black; 
+        }
+        .published_articles-link{
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 18px;
+          text-align: left;
+          text-decoration: underline;
+          color: $primary-blue;
+        }
+      }
+    }
+  }
+
+  .blogs_page{
+    margin-top: 4rem;
+    .featured_insight_title {
+      width: 1120px;
+      margin: {
+        left: auto;
+        right: auto;
+      };
+      font-family: "Philosopher";
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 68px;
+      text-align: left;
+      margin-bottom: 60px;
+      span{
+        color: $primary-red;
+      }
+    }
+    .featured_insight_content{
+      box-shadow: 0px 0px 10px 3px #00000026;
+      background: url(/public/heroImage.png);
+      .featured_insight_details{
+        width: 1120px;
+        display: flex;
+        flex-direction: row;
+        margin: {
+          left: auto;
+          right: auto;
+        };
+        padding: {
+          top: 4rem;
+        };
+        // gap: 60px;
+        justify-content: space-between;
+        .featured_insight_content_details{
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          width: 37rem;
+          .featured_insight_content_title{
+            font-family: "Philosopher";
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 54px;
+            text-align: left;
+          }
+        }
+        .featured_insight_content_details > :nth-child(2){
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 25px;
+          text-align: left;
+          color: $primary-blue;
+        }
+        .featured_insight_content_details > :nth-child(3){
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left; 
+          color: $primary-black;         
+        }
+        .featured_insight_content_details > :nth-child(4){
+          background-color: $primary-red;
+          color: white;
+          width: 11.5rem;
+          padding: 12px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 12px;
+          border-radius: 4px;
+          margin-top: 20px;
+        }
+      }
+    }
+
+    .recent_insights{
+      margin-top: 6rem;
+      .recent_insights_container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 60px;
+        .recent_insights_card{
+          width: 20rem;
+          border: 1px solid #DDDDDD;
+          border-radius: 4px;
+          cursor: pointer;
+          .recent_insights_image{
+            width: 100%;
+            img{
+              width: 100%;
+            }
+          }
+          .recent_insights-category-contents{
+            width: 100%;
+            padding: 12px 16px 12px 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            .recent_insights-category-date{
+              width: 100%;
+              display: flex;
+              border-bottom: 1px solid $dark-grey;
+              padding: {
+                top: 0.5rem;
+                bottom: 0.5rem;
+              }
+              .recent_insights-category{
+                color: $primary-blue;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                border-right: 1px solid $primary-blue;
+                padding-right: 0.5rem;
+              }
+              .recent_insights-date{
+                color: $primary-blue;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                padding-left: 0.5rem;
+              }
+            }
+          }
+          .recent_insights-title{
+            font-family: "Philosopher";
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 20px;
+            text-align: left;
+            color: $dark-grey;
+          }
+          .recent_insights-description{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            color: $primary-black; 
+          }
+          .recent_insights-link{
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 18px;
+            text-align: left;
+            text-decoration: underline;
+            color: $primary-blue;
+          }
+        }
+      }
+    }
+    .recent_insights > :nth-child(1){
+      color: $primary-red;
+      font-family: "Philosopher";
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 54px;
+      text-align: left;
+    }
+    .recent_insights > :nth-child(2){
+      color: $primary-black;
+      font-family: "Philosopher";
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 54px;
+      text-align: left;
+    }
+  }
+
+  .blog-page-header{
+    font-family: "Philosopher";
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 74px;
+    text-align: left;
+    margin-top: 4rem;
+  }
+  .blog-page-date-category{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    gap: 21px;
+    .blog-page-date{
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 28px;
+      text-align: left;
+      color: $dark-grey;
+    }
+    .blog-page-category{
+      width: 8rem;
+      padding: 8px;
+      border-radius: 50px;
+      background: #EAEDFD;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 22px;
+      text-align: left;
+      color: $dark-grey;
+    }
+  }
+
+  .blog-page-hero-section{
+    width: 1120px;
+    border-radius: 4px;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: {
+      left: 2rem;
+      right: 2rem;
+      top: 4rem;
+      bottom: 4rem;
+    };
+    box-shadow: 0px 0px 10px 3px #00000026;
+    .blog-page-hero-overview{
+      width: 38rem;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      h2{
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 48px;
+        text-align: left;
+      }
+      p{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 26px;
+        text-align: left;
+      }
+      button{
+        background-color: $primary-blue;
+        color: white;
+        width: 14rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+        gap: 12px;
+        border-radius: 4px;
+      }
+    }
+  }
+  .blog-page-content-section{
+    width: 37.5rem;
+  }
+  .blog-page-contributors-section{
+    margin-top: 4rem;
+    h2{
+      font-family: "Philosopher";
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 27.5px;
+      text-align: left;
+    }
+    .blog-page-contributors-card{
+      margin: {
+        top: 12px;
+        bottom: 12px;
+      };
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      img{
+        border: 0;
+        border-radius: 50%;
+        height: 5rem;
+        width: 5rem;
+      }
+      .contributor-details > :nth-child(1){
+        font-family: "Philosopher";
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 21px;
+        text-align: left;
+      }
+      .contributor-details > :nth-child(2){
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 21px;
+        text-align: left;
+        color: $primary-blue;        
+      }
+    }
+  }
+
+  .related_articles_section{
+    margin-top: 4rem;
+  }
+
+  .job-opening-details-box{
+    width: 44rem;
+    padding: 16px 24px 16px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid #9099BF;
+    box-shadow: 4px 3px 12px 0px #00000040;
+    .job-opening-details-date{
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 28px;
+      text-align: left;
+      color: $dark-grey;
+    }
+    .job-opening-details-title{
+      font-family: "Philosopher";
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 28px;
+      text-align: left;
+      color: $primary-blue;
+    }
+    .job-opening-details-category{
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 28px;
+      text-align: left;          
+    }
+    .job-opening-details-level-type{
+      display: flex;
+      gap: 12px;
+      .job-opening-details-level{
+        color: #404040;
+        width: 60px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 28px;
+        text-align: center;
+        width: 5rem;
+        padding: 0px 8px;
+        border-radius: 50px;
+        background-color: #ECECEC;
+      }
+      .job-opening-details-type{
+        color: #404040;
+        width: 60px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 28px;
+        text-align: center;
+        width: 5rem;
+        padding: 0px 8px;
+        border-radius: 50px;
+        background-color: #ECECEC;
+      }
+    }
+
+    .job-opening-details-description{
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+      color: $dark-grey;
+    }
+
+    .job-opening-details-salary{
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 28px;
+      text-align: left;
+    }
+  }
+
+  .job-openings-form-section{
+    background-color: #f7f7f7;
+    padding: {
+      top: 4rem;
+      bottom: 4rem;
+    }
+    margin: {
+      top: 4rem;
+      bottom: 4rem;
+    }
+    .job-openings-form-header{
+      margin: {
+        top: 4rem;
+        bottom: 4rem;
+      } 
+    }
+    .job-openings-form-header > :nth-child(1){
+      font-family: "Philosopher";
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 65px;
+      text-align: left;
+      color: $primary-red;
+    }
+    .job-openings-form-header > :nth-child(2){
+      font-family: "Philosopher";
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 65px;
+      text-align: left;
+      color: $primary-black;
+    }
+    .job-openings-form{
+      h2{
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 65px;
+        text-align: left;
+      }
+    }
+}
+
 
 @layer utilities {
   .text-balance {
